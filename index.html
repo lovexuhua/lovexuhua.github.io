@@ -1,0 +1,42 @@
+<!DOCTYPE  html>
+<html  lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <title>Twitter Icons</title>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+  <style>    /*从<style>到<sty..>的内容是设计样式*/
+    #bod1{   /*选择第28行的div标签，#bod1是因为div中设置了id = "bod1"*/
+      margin:10px auto;    /*设置这个标签上下有10px的空隙，左右居中*/
+      padding:20px;       /*设置标签里面的内容距离上下左右20px*/
+      width:200px;        /*设置这个标签的宽度为200px*/
+      border-radius:10px;/*设置这个标签的四角弧度最外围有弧度*/
+      background: rgba(0,150,0,0.5);/*设置这个标签的背景颜色reba的形式*/
+      border:solid 1px #333;/*设置这个标签的边界线，分别为：实线，1px的宽度，#333是颜色*/
+      text-align: center;/*设置标签里的内容居中*/
+    }
+    input{/*设置input标签的元素的样式*/
+      background-color: white;/*设置input标签的颜色为白色*/
+      box-shadow: 2px 2px 2px #ccc;/*设置input标签的阴影，可以不要*/
+      width:150px; /*设置宽度150px*/
+    }
+  </style>
+
+</head>
+
+<body>  <!--上面是样式，下面是显示主体，-->
+<div id="bod1">
+<form>    <!--表单，一般需要提交给后台的内容都写在form里面-->
+  <p id="use_">  <!--标签设置id一般都是为了找到他，可以设置样式或其他，这里没有使用这个id-->
+    <i class="fa fa-user" aria-hidden="true" style="color:blue"></i> <!--这里是引用了一个图标，就是显示的有框框前面的头像，库里面有其他的图标，改class即可图标网址http://fontawesome.io/ic
+                                                                      需要改大小style="color:blue;font-size:3px;"在style加后面一句，改颜色改blue-->
+    <input type="text"  placeholder="  用户名" >  <!--输入框type=“text”输入文本类型，密码用type = "password"其他都用前一个，
+                                                                placeholder="  用户名" 只是刚开始的提示内容，用户点击开始书写自动消失，-->
+  </p>
+  <p id="pass_">
+  <i class="fa fa-key" aria-hidden="true"style="color:blue"></i>
+  <input type="text"  placeholder="  密码">
+</p>
+</form>
+  </div>
+</body>
+</html>
